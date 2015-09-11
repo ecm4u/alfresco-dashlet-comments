@@ -468,7 +468,13 @@
 
       case "document":
         alt = comment.parent.name;
-        iconUrl += comment.parent.icon;
+        //iconUrl += comment.parent.icon;
+        iconUrl += Alfresco.constants.URL_CONTEXT + 'components/images/filetypes/generic-file-32.png';
+        break;
+
+      default:
+        alt = comment.parent.name;
+        iconUrl += Alfresco.constants.URL_CONTEXT + 'components/images/filetypes/generic-file-32.png';
         break;
       }
 
